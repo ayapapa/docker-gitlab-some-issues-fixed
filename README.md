@@ -6,10 +6,10 @@
 fixed some rerative url issues into sammersbn/docker-gitlab
 
 # Rerative url issues
-* Paths of attachments of issues and wikis are always resolved as absolute paths using GITLAB_HOST.
+* Paths of attachments of issues and wikis are always resolved as **absolute paths** using GITLAB_HOST.
   ex. in the case that GITLAB_HOST=xyz.com, when you attached abc.jpg on an issue, the attachment' path is resolved as http://xyz.com/.../abc.jpg on html
-* Paths of avatars are always resolved as absolute paths using GITLAB_HOST.
-* Paths of emoji are always resolved as absolute paths using GITLAB_HOST.
+* Paths of avatars are always resolved as **absolute paths** using GITLAB_HOST.
+* Paths of emoji are always resolved as **absolute paths** using GITLAB_HOST.
 
 # Why rerative url?
 The GitLab service that I am using is made accessible via two reverse proxies.
