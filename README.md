@@ -11,7 +11,7 @@ fixed some rerative url issues into sammersbn/docker-gitlab
 * Paths of avatars are always resolved as absolute paths using GITLAB_HOST.
 * Paths of emoji are always resolved as absolute paths using GITLAB_HOST.
 
-# Why rerative url I need
+# Why rerative url?
 The GitLab service that I am using is made accessible via two reverse proxies.
 The reason for this is due to the following background and constraints.
   1. It is necessary to manage joint projects of developers in the company and developers of cooperating companies
