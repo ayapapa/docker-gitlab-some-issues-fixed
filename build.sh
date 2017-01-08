@@ -18,7 +18,7 @@ git clone -v -b ${DOCKER_GITLAB_VERSION} \
 
 mkdir -p old-ymls
 if [ -f ./docker-compose.yml ]; then
-  YML_FILE_NAME=`date +"%Y-%m-%d-%H-%M-%S"`.yml
+  YML_FILE_NAME=docker-compose.yml-`date +"%Y-%m-%d-%H-%M-%S"`
   cp -p ./docker-compose.yml ./old-ymls/${YML_FILE_NAME}
   echo "old docker-compose.yml was moved to ./old-ymls/${YML_FILE_NAME}"
 fi
