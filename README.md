@@ -26,3 +26,5 @@ for docker-compose, see https://docs.docker.com/compose/ or https://github.com/d
 1. clone this project
 2. update docker-compose.yml if you need
 3. execute ```sudo docker-compose up -d``` on the project directory.
+
+Docker images: https://hub.docker.com/r/ayapapa/docker-gitlab/
