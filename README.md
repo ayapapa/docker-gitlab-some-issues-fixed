@@ -3,7 +3,7 @@
 [![](https://images.microbadger.com/badges/version/ayapapa/docker-gitlab.svg)](https://microbadger.com/images/ayapapa/docker-gitlab "Get your own version badge on microbadger.com")
 
 # What? 
-fixed some rerative url issues into sammersbn/docker-gitlab
+forked [sameersbn/docker-gitlab](https://github.com/sameersbn/docker-gitlab) and fixed some absolute url issues. 
 
 # Absolute url issues
 * Paths of attachments of issues and wikis are always resolved as **absolute paths** using GITLAB_HOST.
@@ -11,16 +11,17 @@ fixed some rerative url issues into sammersbn/docker-gitlab
 * Paths of avatars are always resolved as **absolute paths** using GITLAB_HOST.
 * Paths of emoji are always resolved as **absolute paths** using GITLAB_HOST.  
 
-see also https://gitlab.com/gitlab-org/gitlab-ce/issues/2952
-
+see also:  
+ * https://gitlab.com/gitlab-org/gitlab-ce/issues/2952
+ * https://gitlab.com/gitlab-org/gitlab-ce/issues/975  
+   This issue is still being discussed continuously.
+   
 # Why rerative url?
 The GitLab service that I am using is made accessible via two reverse proxies.
 The reason for this is due to the following background and constraints.
   1. It is necessary to manage joint projects of developers in the company and developers of cooperating companies
   2. In-house developers need to access the GitLab service from the intranet. This is to reduce the Internet access load.
   3. Developers of cooperating companies need access to the GitLab service via the Internet
-
-see also https://gitlab.com/gitlab-org/gitlab-ce/issues/2952
 
 # Prerequisites
 Install docker-engine and docker compose.  
