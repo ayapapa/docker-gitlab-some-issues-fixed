@@ -1,5 +1,5 @@
 # docker image
-FROM sameersbn/gitlab:8.14.5
+FROM sameersbn/gitlab:8.15.2
 
 # maintainer information
 MAINTAINER ayapapa ayapapajapan@yahoo.co.jp
