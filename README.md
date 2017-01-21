@@ -3,7 +3,7 @@
 [![](https://images.microbadger.com/badges/version/ayapapa/docker-gitlab.svg)](https://microbadger.com/images/ayapapa/docker-gitlab "Get your own version badge on microbadger.com")
 
 # What?
-This is forked [sameersbn/docker-gitlab](https://github.com/sameersbn/docker-gitlab) and fixed some absolute url issues.
+This is forked from [sameersbn/docker-gitlab](https://github.com/sameersbn/docker-gitlab) and fixed some absolute url issues.
 
 # Absolute url issues
 * Paths of attachments of issues and wikis are always resolved as **absolute paths** using GITLAB_HOST.

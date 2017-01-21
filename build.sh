@@ -2,7 +2,7 @@
 
 DOCKER_GITLAB_VERSION=`cat VERSION`
 
-echo -n "building docker-gitlab:${DOCKER_GITLAB_VERSION}\'s"
+echo -n "building docker-gitlab:${DOCKER_GITLAB_VERSION}'s"
 echo    " fixed rerative url issues..."
 
 echo DOCKER_GITLAB_VERSION=${DOCKER_GITLAB_VERSION}
