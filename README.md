@@ -2,20 +2,20 @@
 [![](https://images.microbadger.com/badges/image/ayapapa/docker-gitlab.svg)](https://microbadger.com/images/ayapapa/docker-gitlab "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/ayapapa/docker-gitlab.svg)](https://microbadger.com/images/ayapapa/docker-gitlab "Get your own version badge on microbadger.com")
 
-# What? 
-forked [sameersbn/docker-gitlab](https://github.com/sameersbn/docker-gitlab) and fixed some absolute url issues. 
+# What?
+This is forked [sameersbn/docker-gitlab](https://github.com/sameersbn/docker-gitlab) and fixed some absolute url issues.
 
 # Absolute url issues
 * Paths of attachments of issues and wikis are always resolved as **absolute paths** using GITLAB_HOST.
   ex. in the case that GITLAB_HOST=xyz.com, when you attached abc.jpg on an issue, the attachment' path is resolved as http://xyz.com/.../abc.jpg on html
 * Paths of avatars are always resolved as **absolute paths** using GITLAB_HOST.
-* Paths of emoji are always resolved as **absolute paths** using GITLAB_HOST.  
+* Paths of emoji are always resolved as **absolute paths** using GITLAB_HOST.
 
-see also:  
+see also:
  * https://gitlab.com/gitlab-org/gitlab-ce/issues/2952
- * https://gitlab.com/gitlab-org/gitlab-ce/issues/975  
+ * https://gitlab.com/gitlab-org/gitlab-ce/issues/975
    This issue is still being discussed continuously.
-   
+
 # Why rerative url?
 The GitLab service that I am using is made accessible via two reverse proxies.
 The reason for this is due to the following background and constraints.
@@ -24,8 +24,8 @@ The reason for this is due to the following background and constraints.
   3. Developers of cooperating companies need access to the GitLab service via the Internet
 
 # Prerequisites
-Install docker-engine and docker compose.  
-for docker-engine, see https://docs.docker.com/engine/installation/  
+Install docker-engine and docker compose.
+for docker-engine, see https://docs.docker.com/engine/installation/
 for docker-compose, see https://docs.docker.com/compose/ or https://github.com/docker/compose/releases
 
 # How to use
