@@ -16,7 +16,7 @@ RUN \
       /home/git/gitlab/app/models/user.rb && \
     \
     TARGET="return if html_attr\.value\.start_with?('\/\/')" && \
-    REPLACE="\        return if ! html_attr.value.start_with?('/uploads')" && \
+    REPLACE="\        return if html_attr.value.start_with?(Gitlab.config.gitlab.relative_url_root) && File.dirname(File.dirname(html_attr.value)).end_with?('uploads')" && \
     sed -i.org "/${TARGET}/a ${REPLACE}" \
         /home/git/gitlab/lib/banzai/filter/relative_link_filter.rb && \
     \
