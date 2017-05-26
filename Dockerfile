@@ -1,5 +1,5 @@
 # docker image
-FROM sameersbn/gitlab:9.1.3
+FROM sameersbn/gitlab:9.1.4
 
 # maintainer information
 MAINTAINER ayapapa ayapapajapan@yahoo.co.jp
@@ -28,9 +28,4 @@ RUN \
     TARGET="File\.join(${ABSROOT}, project\.path_with_namespace, uri)" && \
     REPLACE="File\.join(${RELROOT}, project\.path_with_namespace, uri)" && \
     sed -i.org  "s/${TARGET}/${REPLACE}/" \
-        /home/git/gitlab/lib/banzai/filter/upload_link_filter.rb && \
-    \
-    TARGET="File\.join(context\[:asset_root\], url_to_image(emoji_path))" && \
-    REPLACE="url_to_image(emoji_path)" && \
-    sed -i.org "s/${TARGET}/${REPLACE}/" \
-        /home/git/gitlab/lib/banzai/filter/emoji_filter.rb
+        /home/git/gitlab/lib/banzai/filter/upload_link_filter.rb
