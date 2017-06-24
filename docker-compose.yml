@@ -22,7 +22,7 @@ services:
 
   gitlab:
     restart: always
-    image: ayapapa/docker-gitlab:9.2.5
+    image: ayapapa/docker-gitlab:9.2.7
     depends_on:
     - redis
     - postgresql
