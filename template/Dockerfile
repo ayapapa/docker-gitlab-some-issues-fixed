@@ -6,6 +6,8 @@ MAINTAINER ayapapa ayapapajapan@yahoo.co.jp
 
 # fix some issues related to relative resources(avatar, uploads)' url
 RUN \
+    ABSROOT="Gitlab\.config\.gitlab\.url" && \
+    RELROOT="Gitlab\.config\.gitlab\.relative_url_root" && \
     TARGET="return if html_attr\.value\.start_with?('\/\/')" && \
     REPLACE="\        return if html_attr.value.start_with?(Gitlab.config.gitlab.relative_url_root) && File.dirname(File.dirname(html_attr.value)).end_with?('uploads')" && \
     sed -i.org "/${TARGET}/a ${REPLACE}" \
