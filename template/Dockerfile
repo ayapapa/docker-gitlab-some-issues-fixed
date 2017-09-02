@@ -18,7 +18,7 @@ RUN \
     sed -i.org "/${TARGET}/a ${REPLACE}" \
         /home/git/gitlab/lib/banzai/filter/wiki_link_filter/rewriter.rb && \
     \
-    TARGET="File\.join(${ABSROOT}, project\.path_with_namespace, uri)" && \
-    REPLACE="File\.join(${RELROOT}, project\.path_with_namespace, uri)" && \
+    TARGET="${ABSROOT}" && \
+    REPLACE="${RELROOT}" && \
     sed -i.org  "s/${TARGET}/${REPLACE}/" \
         /home/git/gitlab/lib/banzai/filter/upload_link_filter.rb
