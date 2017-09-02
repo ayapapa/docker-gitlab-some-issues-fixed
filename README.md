@@ -8,8 +8,8 @@ This is forked from [sameersbn/docker-gitlab](https://github.com/sameersbn/docke
 # Absolute url issues
 * Paths of attachments of issues and wikis are always resolved as **absolute paths** using GITLAB_HOST.
   ex. in the case that GITLAB_HOST=xyz.com, when you attached abc.jpg on an issue, the attachment' path is resolved as http://xyz.com/.../abc.jpg on html
-* Paths of avatars are always resolved as **absolute paths** using GITLAB_HOST.
-* Paths of emoji are always resolved as **absolute paths** using GITLAB_HOST.
+* ~~Paths of avatars are always resolved as **absolute paths** using GITLAB_HOST.~~
+* ~~Paths of emoji are always resolved as **absolute paths** using GITLAB_HOST.~~
 
 see also:
  * https://gitlab.com/gitlab-org/gitlab-ce/issues/2952
