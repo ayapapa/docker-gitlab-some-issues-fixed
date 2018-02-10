@@ -22,7 +22,8 @@ services:
 
   gitlab:
     restart: always
-    image: ayapapa/docker-gitlab:10.3.4
+    #image: sameersbn/gitlab:10.3.5
+    image: ayapapa/docker-gitlab:10.3.5
     depends_on:
     - redis
     - postgresql
