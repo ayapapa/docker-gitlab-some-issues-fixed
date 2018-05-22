@@ -1,3 +1,5 @@
+このプロジェクトで取り上げている問題は、Version10.4の途中で解消された模様。従って、10.4からは、本番の[sameersbn/docker-gitlab](https://github.com/sameersbn/docker-gitlab)を利用し、本プロジェクトは凍結する。
+
 [![Licence](https://img.shields.io/npm/l/express.svg)](https://github.com/ayapapa/docker-gitlab-some-issues-fixed/edit/master/LICENSE)
 [![](https://images.microbadger.com/badges/image/ayapapa/docker-gitlab.svg)](https://microbadger.com/images/ayapapa/docker-gitlab "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/ayapapa/docker-gitlab.svg)](https://microbadger.com/images/ayapapa/docker-gitlab "Get your own version badge on microbadger.com")
